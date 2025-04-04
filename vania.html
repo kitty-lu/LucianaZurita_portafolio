@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio personal</title>
+    <link rel="stylesheet" href = "css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<header>
+    <h1>Vania Zurita</h1>
+    <nav>
+        <ul>
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#social">Redes Sociales</a></li>       
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <section id="about" class="hero">
+    <div>
+        <h2>Sobre mi</h2>
+        <p>Soy estudiante de Ingeniería en Ciencia de Datos e
+            Inteligencia de Negocios de la Universidad del Valle (UNIVALLE),
+            en mis tiempos libres me gusta dedicarme a varios pasatiempos,
+            pero en el que mas destaco es el modelaje profesional de pasarela,
+            investigar sobre distintos topicos de Modelos de Naciones Unidas en
+            el mundo, ayudar a los animales de la calle y mas.
+        </p>
+    </div>
+        <img src="imagenes/perfil/perfilportafolio.jpg" alt="Vania Zurita">
+    </section>
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Modelos de Naciones Unidas</h3>
+                <p>Participe en variados Modelos de Naciones Unidas (MUNS) de distintas instituciones, llegando a participar internacionalmente representando a Bolivia como delegacion.</p>
+                <p>Obtuve certificaciones por excelencia, siendo el mas destacado en MONTEMUN, que se llevo a cabo en Bogota-Colombia obteniendo primer puesto en ONU Mujeres representando a Bolivia.</p>
+                <p>De igual manera obtuve reconocimientos en mi institucion academica por haberla representado en 20 Modelos entre 2021-2023 tanto nacionales como internacionales.</p>
+                 </div>
+            <div class="project">
+                <h3>Modelaje</h3>
+                <p>Participe en varias pasarelas siendo esta mi especialidad, trabajando y modelando para marcas reconocidas en Bolivia como "Khuyana", "Alvaro Fuentes", "Norma Mendoza", etc.</p>
+                <p>Estuve en un certamen de belleza siendo este "Miss XV años", donde consegui el titulo de "Miss Fashion Cochabamba".</p>
+                <p>Actualmente participo en pasarelas beneficas o en la FEXCO como azafata.</p>          
+            </div>
+            <div class="project">
+                    <h3>Voluntariado</h3>
+                    <p>Actualmente participo de voluntariados para animales, soy parte de "Los Guardianes de la Sansi", siendo una comunidad de jovenes universitarios que velan el bienestar de cada animal.</p>
+            </div>
+        </div>
+    </section>
+   
+    <section id="gallery"></section>
+    <div class="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-item">
+            <img src="imagenes/galeria/1.jpg" alt="Vania Zurita">
+            
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/galeria/2.jpg" alt="Vania Zurita">
+            
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/galeria/3.jpg" alt="Vania Zurita">
+            
+        </div>  
+        <div class="gallery-item">
+            <img src="imagenes/galeria/4.jpg" alt="Vania Zurita">
+            
+        </div> 
+        <div class="gallery-item">
+            <img src="imagenes/galeria/5.jpg" alt="Vania Zurita">
+            
+        </div> 
+
+        <div class="gallery-item">
+            <img src="imagenes/galeria/6.jpg" alt="Vania Zurita">
+            
+        </div> 
+
+
+
+    
+        <section id="skills" class="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <!-- Lista de habilidades -->
+                <script>
+                    const skills = [
+                        { name: "Python", level: 60, icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" },
+                        { name: "MySQL", level: 50, icon: "https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" },
+                        { name: "Inglés", level: 80, icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" },
+                        { name: "Alemán", level: 40, icon: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" },
+                         ];
+        
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const container = document.querySelector(".skills-container");
+                        skills.forEach(skill => {
+                            const skillCard = document.createElement("div");
+                            skillCard.classList.add("skill-card");
+                            skillCard.innerHTML = `
+                                <div class="skill-icon">
+                                    <img src="${skill.icon}" alt="${skill.name} Icon" class="icon">
+                                </div>
+                                <label>${skill.name}</label>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: ${skill.level}%;"></div>
+                                </div>
+                                <span>${skill.level}%</span>
+                            `;
+                            container.appendChild(skillCard);
+                        });
+                    });
+                </script>
+            </div>
+        </section>
+        
+        <section id="social">
+            <h2>Redes Sociales</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/lu-zurita-6468a4356" target="_blank">
+                    <img class="social-icon" src="https://store-images.s-microsoft.com/image/apps.46485.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.df3dbdf7-e6b9-4d2a-a5ad-3b91e430d172" alt="LinkedIn" />
+                    LinkedIn
+                </a>
+                <a href="https://https://github.com/kitty-lu" target="_blank">
+                    <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/180px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" />
+                    GitHub
+                </a>
+            </div>
+        </section>
+        
+        
+        
+    <section id="contact">
+
+        <h2>Contacto</h2>
+        <div class="contact-form">
+            <form action="">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escriba su mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+</div>
+<footer>
+    <p>© 2025 Vania Zurita - Todos los derechos reservados - Estudiante </p>
+</footer>
+<body>
+    
+</body>
+</html>
+
+
