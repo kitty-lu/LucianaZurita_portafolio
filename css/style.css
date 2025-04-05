@@ -1,37 +1,37 @@
 :root {
-    --primary-color: #ff6464;
+    --primary-color: #e97fc4;
     --secondary-color: #ffa4e4;
     --dark-bg: #1a1a1a;
-    --light-bg: #f8f9fa;
+    --light-bg: #ffd3f7;
     --transition: all 0.3s ease;
 }
 
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: var(--dark-bg);
-    color: #1a0415;
+    color: #a5007e;
 }
 
 body.dark-mode .navbar {
-    background-color: #520e4c !important;
+    background-color: #9c008f !important;
 }
 
 body.dark-mode .navbar-light .navbar-brand,
 body.dark-mode .navbar-light .nav-link {
-    color: #fff !important;
+    color: #8f2929 !important;
 }
 
 body.dark-mode .project-card,
 body.dark-mode .skill-card {
-    background-color: #2d2d2d;
-    color: #fff;
+    background-color: #9c008d;
+    color: #be4b8c;
 }
 
 /* Navbar Styles */
 .navbar {
     transition: var(--transition);
     padding: 1rem 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(184, 46, 129, 0.95);
 }
 
 .navbar.scrolled {
